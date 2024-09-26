@@ -85,26 +85,12 @@ Item # | Item name                | Price
 2      | Banana                   | $0.69
 3      | Apple                    | $0.49
 4      | Granola bar              | $1.99
-Type/Enter your selection from the menu: 1
+Type/Enter your selection from the menu: 2
 
-Enter the quantity of 'Cookie' you would like to order. 
- (If your input is invalid then we will default to '1') :1
-[{'Item name': 'Cookie', 'Price': 0.99, 'Quantity': 1}]
+Enter the quantity of 'Banana' you would like to order. 
+ (If your input is invalid then we will default to '1') :3
 
-Would you like to keep ordering? (Y)es or (N)o :n
-Thank you for your order
-This is what we are preparing for you.
-
-Item name                 | Price  | Quantity
---------------------------|--------|----------
-Cookie                    | $0.99  | 1
-
-|------------------------------|
-|Total cost of the order: $0.99|
-|------------------------------|
-
-(dev) (base) avineetsharma@Avineets-MacBook-Air python-challenge-1 % python menu.py
-Welcome to the variety food truck.
+Would you like to keep ordering? (Y)es or (N)o :y
 From which menu would you like to order? 
 1: Snacks
 2: Meals
@@ -124,11 +110,10 @@ Item # | Item name                | Price
 7      | Coffee - Espresso        | $2.99
 8      | Coffee - Flat white      | $2.99
 9      | Coffee - Iced            | $3.49
-Type/Enter your selection from the menu: 3
+Type/Enter your selection from the menu: 7
 
-Enter the quantity of 'Soda - Large' you would like to order. 
- (If your input is invalid then we will default to '1') :3
-[{'Item name': 'Soda - Large', 'Price': 2.99, 'Quantity': 3}]
+Enter the quantity of 'Coffee - Espresso' you would like to order. 
+ (If your input is invalid then we will default to '1') :7
 
 Would you like to keep ordering? (Y)es or (N)o :y
 From which menu would you like to order? 
@@ -147,58 +132,10 @@ Item # | Item name                | Price
 4      | Australian Pavlova       | $9.99
 5      | Rice pudding             | $4.99
 6      | Fried banana             | $4.49
-Type/Enter your selection from the menu: 4
-
-Enter the quantity of 'Australian Pavlova' you would like to order. 
- (If your input is invalid then we will default to '1') :4
-[{'Item name': 'Soda - Large', 'Price': 2.99, 'Quantity': 3}, {'Item name': 'Australian Pavlova', 'Price': 9.99, 'Quantity': 4}]
-
-Would you like to keep ordering? (Y)es or (N)o :y
-From which menu would you like to order? 
-1: Snacks
-2: Meals
-3: Drinks
-4: Dessert
-Type menu number: 2
-You selected Meals
-What Meals item would you like to order?
-Item # | Item name                | Price
--------|--------------------------|-------
-1      | Burrito                  | $4.49
-2      | Teriyaki Chicken         | $9.99
-3      | Sushi                    | $7.49
-4      | Pad Thai                 | $6.99
-5      | Pizza - Cheese           | $8.99
-6      | Pizza - Pepperoni        | $10.99
-7      | Pizza - Vegetarian       | $9.99
-8      | Burger - Chicken         | $7.49
-9      | Burger - Beef            | $8.49
 Type/Enter your selection from the menu: 6
 
-Enter the quantity of 'Pizza - Pepperoni' you would like to order. 
- (If your input is invalid then we will default to '1') :6
-[{'Item name': 'Soda - Large', 'Price': 2.99, 'Quantity': 3}, {'Item name': 'Australian Pavlova', 'Price': 9.99, 'Quantity': 4}, {'Item name': 'Pizza - Pepperoni', 'Price': 10.99, 'Quantity': 6}]
-
-Would you like to keep ordering? (Y)es or (N)o :y
-From which menu would you like to order? 
-1: Snacks
-2: Meals
-3: Drinks
-4: Dessert
-Type menu number: 1
-You selected Snacks
-What Snacks item would you like to order?
-Item # | Item name                | Price
--------|--------------------------|-------
-1      | Cookie                   | $0.99
-2      | Banana                   | $0.69
-3      | Apple                    | $0.49
-4      | Granola bar              | $1.99
-Type/Enter your selection from the menu: 2
-
-Enter the quantity of 'Banana' you would like to order. 
- (If your input is invalid then we will default to '1') :3
-[{'Item name': 'Soda - Large', 'Price': 2.99, 'Quantity': 3}, {'Item name': 'Australian Pavlova', 'Price': 9.99, 'Quantity': 4}, {'Item name': 'Pizza - Pepperoni', 'Price': 10.99, 'Quantity': 6}, {'Item name': 'Banana', 'Price': 0.69, 'Quantity': 3}]
+Enter the quantity of 'Fried banana' you would like to order. 
+ (If your input is invalid then we will default to '1') :8
 
 Would you like to keep ordering? (Y)es or (N)o :n
 Thank you for your order
@@ -206,12 +143,11 @@ This is what we are preparing for you.
 
 Item name                 | Price  | Quantity
 --------------------------|--------|----------
-Soda - Large              | $2.99  | 3
-Australian Pavlova        | $9.99  | 4
-Pizza - Pepperoni         | $10.99 | 6
 Banana                    | $0.69  | 3
+Coffee - Espresso         | $2.99  | 7
+Fried banana              | $4.49  | 8
 
-|--------------------------------|
-|Total cost of the order: $116.94|
-|--------------------------------|
+|-------------------------------|
+|Total cost of the order: $58.92|
+|-------------------------------|
 ```

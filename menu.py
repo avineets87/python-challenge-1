@@ -146,7 +146,7 @@ while place_order:
                         "Price": menu_items[menu_sel_int]["Price"],
                         "Quantity": quantity
                     })
-                    print (order)
+                    
                     # Tell the customer that their input isn't valid
 
 
