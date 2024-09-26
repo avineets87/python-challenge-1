@@ -60,6 +60,7 @@ print("Welcome to the variety food truck.")
 # Customers may want to order multiple items, so let's create a continuous
 # loop
 place_order = True
+
 while place_order:
     # Ask the customer from which menu category they want to order
     print("From which menu would you like to order? ")
@@ -156,7 +157,7 @@ while place_order:
                     print(f"{menu_selection} was not a menu option.")
             else:
                 # Tell the customer they didn't select a number
-                print("You didn't select a number.")
+                print("Oops! You didn't select a number.")
         else:
             # Tell the customer they didn't select a menu option
             print(f"{menu_category} was not a menu option.")
