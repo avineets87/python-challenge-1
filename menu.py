@@ -131,7 +131,7 @@ while place_order:
                     menu_selection_name = (menu_items[menu_sel_int]["Item name"])
 
                     # Ask the customer for the quantity of the menu item
-                    quantity_input = input(f"Enter the quanitity of '{menu_selection_name}' you would like to order. \nP.S. If your input is invalid then we will default to '1'")
+                    quantity_input = input(f"\nEnter the quantity of '{menu_selection_name}' you would like to order. \n (If your input is invalid then we will default to '1') :")
 
 
                     # Check if the quantity is a number, default to 1 if not
@@ -166,7 +166,7 @@ while place_order:
 
     while True:
         # Ask the customer if they would like to order anything else
-        keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o :")
+        keep_ordering = input("\nWould you like to keep ordering? (Y)es or (N)o :")
 
         # 5. Check the customer's input
         match keep_ordering.upper():
@@ -226,4 +226,11 @@ for item in order:
 total_cost = sum(item['Price'] * item['Quantity'] for item in order)
 
 # and print the prices.
-print(f'Total cost of the order: ${total_cost:.2f}')
+formatted_total_cost = f"{total_cost:.2f}"
+extra_dash = (len(formatted_total_cost)+26) * '-'
+
+print(f"""
+|{extra_dash}|
+|Total cost of the order: ${formatted_total_cost}|
+|{extra_dash}|
+""")
